@@ -1,0 +1,207 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww37900\viewh21300\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 1. Please have your framework ready\
+Dependencies\
+All utility classes builded from scratch (no copy pasting)\
+Pages (login, dashboard should be ready)\
+Config file,1 login feature\
+Step Definition and Runner Class\
+etc\
+Each team member should participate in the process of building the framework. Once each person completes its part code needs to be merged and the entire team should get a complete framework.\
+\
+Make sure each team member understand flow of the framework and what each piece is responsible for\
+\
+2. Do Sprint Grooming\
+make sure all team members understand each user story and assign points to every user story\
+\
+3. Do Sprint Planning\
+each team member needs to pick at least 1 user story that he/she is comfortable with and assigns it is own tasks to chosen user story\
+\
+4. Do manual testing first and then start automation of your own user stories\
+\
+5. Help each other\
+if any team member faces any difficulties during project/automation please make sure to solve an issues as a team. Only if you cannot resolve issues together then post them in the support channel.\
+\
+6. Final steps:\
+make sure to have methods to handle radio buttons/checkboxes, drop downs, alerts, frames, windows etc are developed.\
+make sure you code is executed through maven\
+makes sure code generates report and add screenshots to it\
+make sure code generates logs\
+make sure all user stories automated, code is on the GitHub and code merged to the main branch\
+\
+7. Hold Sprint Retro\
+    each team please draw the framework\
+\
+    Note: please make sure you do daily stand ups to update the team on your progress\
+\
+\
+Git \
+*************Group Project Batch15******************\
+\
+If u guys are following the structure of phases as explained in class\
+\
+ ***************phase 1 of the Project*************\
+ ****************Team Members*************************** \
+\
+1.Clone the project\
+  *git clone url\
+  *make sure that u are in the repository where u cloned the repo (usually a folder is cloned so u have  \
+   to do cd folder name)\
+  -------------------------------------------\
+2.create your branch\
+   *git branch BranchName\
+   *git checkout BranchName\
+\
+   Important: to check if u are on the right branch\
+              git branch \
+              and the * sign will show that on which branch u are right now\
+  problems:\
+    unable to switch the branch because of some files that were changed (may be spaces, may be IntelliJ added some file.)\
+  solution:\
+  "git stash" or "git stash -u"\
+   -------------------------------------------\
+3.write down your code\
+   -------------------------------------------\
+4.you will push it to the Github (in your own branch) ---> NO ONE PUSHES IN THE MAIN  !!!!!NO ONE!!!!!!!!\
+     *git add .\
+     *git commit -m "message"\
+     *git push -u origin BranchName\
+   -------------------------------------------\
+\
+Once the code is there on GitHub in your branch\
+\
+Team Members are going to Open up a pull request  and assign it to  "TEAM LEAD"\
+ -------------------------------------------\
+\
+         *****************Team Lead**************--- Will merge\
+\
+       1.git branch (he will se only the local branches he has)\
+           -------------------------------------------\
+       2.in order to get remote branches   \
+          git branch -a (it will list all the branches that are on the remote)\
+\
+          issue: git branch -a (doesn\'92t list all the branches on remote )\
+           do git fetch  --> to resync ur gitbash/terminal with GitHub\
+           -------------------------------------------\
+       3. in order to download the branch on his local\
+  		  git checkout branchName\
+  		   -------------------------------------------\
+\
+  	   4.  check the code , if u want to merge it\
+  	         *git checkout main (parent branch)\
+  	         *git merge child branch\
+\
+  	      Note:\
+  	         if u are going to have a fast forward merge , u all good\
+  	         if u are going to have a recursive merge  \
+  	               * u might have a merge conflict\
+  	                  Abort : u need to resolve it manually \
+  	                           u decide which to keep \
+  	                         !!!!!!! and then u Commit the merge!!!!!!\
+  	                *u might not have a merge conflict\
+  	                      git is going to ask u to make the merge comment \
+  	                      in VIM editor\
+\
+  	                        in VIM editor:\
+  	                        press I : to insert mode  and then enter the commit message\
+  	                        press Esc: to exit the insert mode\
+  	                        press :wq  : to save the comment\
+\
+  	          -------------------------------------------\
+  	      5.push the updated main branch to the Github\
+\
+  	         * git push -u origin main\
+\
+\
+\
+\
+\
+\
+ ***************phase 2 of the Project*************\
+ ****************Team Members*************************** \
+\
+\
+1.u need to update ur main branch with the one on Github  (team lead doesn\'92t have to as he already has it updated)\
+   \
+     *git fetch\
+     *git pull\
+\
+   RedAlert:\
+  **!!!! make sure you are in the main branch while doing this operation\
+ -------------------------------------------\
+\
+2. Create a new Branch from the updated main\
+\
+    *git branch branchName\
+    *git checkout branchName\
+ -------------------------------------------\
+\
+3.  write code for ur project (usr stories)\
+     \
+ -------------------------------------------\
+\
+4.  commit and push  once done\
+\
+ -------------------------------------------\
+5. Open a pull request to merge in mai n branch and assign it to team lead\
+\
+ -------------------------------------------\
+\
+\
+\
+\
+ *****************Team Lead**************--- Will merge\
+\
+       1.git branch (he will se only the local branches he has)\
+           -------------------------------------------\
+       2.in order to get remote branches   \
+          git branch -a (it will list all the branches that are on the remote)\
+\
+          issue: git branch -a (doesn\'92t list all the branches on remote )\
+           do git fetch  --> to resync ur gitbash/terminal with GitHub\
+           -------------------------------------------\
+       3. in order to download the branch on his local\
+  		  git checkout branchName\
+  		   -------------------------------------------\
+\
+  	   4.  check the code , if u want to merge it\
+  	         *git checkout main (parent branch)\
+  	         *git merge child branch\
+\
+  	      Note:\
+  	         if u are going to have a fast forward merge , u all good\
+  	         if u are going to have a recursive merge  \
+  	               * u might have a merge conflict\
+  	                  Abort : u need to resolve it manually \
+  	                           u decide which to keep \
+  	                         !!!!!!! and then u Commit the merge!!!!!!\
+  	                *u might not have a merge conflict\
+  	                      git is going to ask u to make the merge comment \
+  	                      in VIM editor\
+\
+  	                        in VIM editor:\
+  	                        press I : to insert mode  and then enter the commit message\
+  	                        press Esc: to exit the insert mode\
+  	                        press :wq  : to save the comment\
+\
+  	          -------------------------------------------\
+  	      5.push the updated main branch to the Github\
+\
+  	         * git push -u origin main\
+\
+\
+\
+\
+\
+Note:Team lead , will play dual role\
+I.e team lead and a member also.\
+so everything is going to be exact same\
+the only difference he will never have to update his local main , as he will be locally merging the project\
+\
+\
+}
